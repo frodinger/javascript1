@@ -5,5 +5,22 @@ For numbers which are multiples of both three and five print “FizzBuzz”.
 */
 
 function fizzBuzz() {
-    
+    //använder en for-loop
+    for (let i = 1; i <= 100; i++) {
+        //kollar först om båda stämmer så att den inte skriver ut buzz eller fizz innan den kollat om båda stämmer
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log("FizzBuzz");
+        }
+        else if (i % 3 == 0) {
+            console.log("Fizz");
+        }
+        else if (i % 5 == 0) {
+            console.log("Buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
+
+fizzBuzz();
