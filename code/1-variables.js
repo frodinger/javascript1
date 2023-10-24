@@ -12,6 +12,7 @@ let fruit = "Apple";
 fruit = "Orange";
 
 /* om man måste behålla const
+tagit hjälp av https://www.freecodecamp.org/news/understanding-let-const-and-var-keywords/
 const fruit = {
     "fruit": "Apple"
 }
