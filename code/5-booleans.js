@@ -19,7 +19,11 @@ Task 1:
     Write an if-statement which logs (console.log) "Get writing!" if the number is 0.
 */
 const wordCount = 0;
-
+if (wordCount > 0) {
+    console.log("Keep at it!");
+} else {
+    console.log("Get writing!");
+}
 
 /*
 Task 2:
@@ -29,8 +33,14 @@ Task 2:
     if the current temperature is greater than 10, and the goneForARun is false.
 */         
 const currentTemperature = 15;
-const goneForARun = false;
-
+const goneForARun = true;
+if (currentTemperature >= 10 && goneForARun == false) {
+    console.log("Go for a run!");
+} else if (currentTemperature < 10) {
+    console.log("It's too cold!");
+} else {
+    console.log("You have already gone for a run!");
+}
 
 /*
 Task 3:
@@ -42,3 +52,10 @@ Task 3:
     Documentation: https://www.w3schools.com/js/js_if_else.asp
 */ 
 const name = "Mary";
+if (name.length > 10) {
+    console.log("You have a long name!");
+} else if (name.length < 5) {
+    console.log("You have a short name!");
+} else {
+    console.log("You have a medium length name!");
+}
